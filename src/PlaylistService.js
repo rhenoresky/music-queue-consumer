@@ -18,6 +18,7 @@ class PlaylistService {
     const songsResult = await this._pool.query(queryGetSongs);
 
     const playlists = playlistResult.rows[0];
+
     const result = {
       playlist: {
         id: playlists.id,
